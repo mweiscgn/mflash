@@ -80,6 +80,8 @@ cell_criteria['COCxggs8q'] = {'abund_co':[1e-4, np.inf], 'gcritsq':[1., np.inf],
 cell_criteria['COCxggt2'] = {'abund_co':[1e-4, np.inf], 'absgrad_gpot':[5e-8, np.inf],}
 cell_criteria['all'] = {'dens':[0., np.inf],}
 
+cell_criteria['Cex8'] = {'cdto':[8., np.inf],}
+
 #cell_criteria['COCex8-reg1'] = {'abund_co':[1e-4, np.inf], 'cdto':[8., np.inf], 'reg1':[.5, np.inf]}
 #cell_criteria['COCex8-reg2'] = {'abund_co':[1e-4, np.inf], 'cdto':[8., np.inf], 'reg2':[.5, np.inf]}
 
@@ -125,6 +127,10 @@ select_criteria_combos['COCex8p30'] = {'criteria':cell_criteria['COCex8'], 'MinP
 select_criteria_combos['COCxp30NL99'] = {'criteria':cell_criteria['COCxNL99'], 'MinPts':30}
 select_criteria_combos['COCex8p30NL99'] = {'criteria':cell_criteria['COCex8NL99'], 'MinPts':30}
 
+select_criteria_combos['Cg0a_fw2']  = {'var':'gpot', 'threshold':0., 'direction':'down',
+    'MaxJump':4, 'MinDipStd':0., 'criteria':cell_criteria['all']}
+select_criteria_combos['Cex8p30'] = {'criteria':cell_criteria['Cex8'], 'MinPts':30}
+    
 #select_criteria_combos['COCex8p30-reg1'] = {'criteria':cell_criteria['COCex8-reg1'], 'MinPts':30}
 #select_criteria_combos['COCex8p30-reg2'] = {'criteria':cell_criteria['COCex8-reg2'], 'MinPts':30}
 
