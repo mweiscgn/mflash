@@ -8,7 +8,7 @@ import libmf.micflash as mflash
 import libmf.tools as tools
 
 import cl_fofg_142 as fof
-import cl_fellwalk_086 as fellwalk
+import cl_fellwalk_090 as fellwalk
 import cl_dendrofind as ddg
 
 from py27hash.hash import hash27
